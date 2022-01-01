@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EA08340E6963136BB8870D6 /* Pods_T_Convertor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D57E19C0BFDA077B8656A3 /* Pods_T_Convertor.framework */; };
 		A8986FCA267B4716003F7A0F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A8986FC9267B4716003F7A0F /* .gitignore */; };
 		A8D6308725C02FF600DC7837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6308625C02FF600DC7837 /* AppDelegate.swift */; };
 		A8D6308925C02FF600DC7837 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6308825C02FF600DC7837 /* SceneDelegate.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71D57E19C0BFDA077B8656A3 /* Pods_T_Convertor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T_Convertor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84C217F26F228BD003A5AC9 /* T-Convertor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "T-Convertor.entitlements"; sourceTree = "<group>"; };
 		A8986FC9267B4716003F7A0F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A8D6308325C02FF600DC7837 /* T-Convertor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Convertor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D6308625C02FF600DC7837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,8 @@
 		A8D6308F25C02FF700DC7837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8D6309225C02FF700DC7837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8D6309425C02FF700DC7837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA189E913BF7A0AA972AEAB6 /* Pods-T-Convertor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T-Convertor.release.xcconfig"; path = "Target Support Files/Pods-T-Convertor/Pods-T-Convertor.release.xcconfig"; sourceTree = "<group>"; };
+		E30E1EF52FE7AEDF37FA2D49 /* Pods-T-Convertor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T-Convertor.debug.xcconfig"; path = "Target Support Files/Pods-T-Convertor/Pods-T-Convertor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,18 +38,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA08340E6963136BB8870D6 /* Pods_T_Convertor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EC0A4A1D694E1A73EF5DF9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E30E1EF52FE7AEDF37FA2D49 /* Pods-T-Convertor.debug.xcconfig */,
+				CA189E913BF7A0AA972AEAB6 /* Pods-T-Convertor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A8D6307A25C02FF600DC7837 = {
 			isa = PBXGroup;
 			children = (
 				A8986FC9267B4716003F7A0F /* .gitignore */,
 				A8D6308525C02FF600DC7837 /* T-Convertor */,
 				A8D6308425C02FF600DC7837 /* Products */,
+				5EC0A4A1D694E1A73EF5DF9E /* Pods */,
+				C8D16C0051DC116DC780F405 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +76,7 @@
 		A8D6308525C02FF600DC7837 /* T-Convertor */ = {
 			isa = PBXGroup;
 			children = (
+				A84C217F26F228BD003A5AC9 /* T-Convertor.entitlements */,
 				A8D6308625C02FF600DC7837 /* AppDelegate.swift */,
 				A8D6308825C02FF600DC7837 /* SceneDelegate.swift */,
 				A8D6308A25C02FF600DC7837 /* ViewController.swift */,
@@ -70,6 +88,14 @@
 			path = "T-Convertor";
 			sourceTree = "<group>";
 		};
+		C8D16C0051DC116DC780F405 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71D57E19C0BFDA077B8656A3 /* Pods_T_Convertor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8D6309725C02FF700DC7837 /* Build configuration list for PBXNativeTarget "T-Convertor" */;
 			buildPhases = (
+				5BD37DCF59D1C5955B5F55B1 /* [CP] Check Pods Manifest.lock */,
 				A8D6307F25C02FF600DC7837 /* Sources */,
 				A8D6308025C02FF600DC7837 /* Frameworks */,
 				A8D6308125C02FF600DC7837 /* Resources */,
+				D57151436E6F52E674403AEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BD37DCF59D1C5955B5F55B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-T-Convertor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D57151436E6F52E674403AEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-T-Convertor/Pods-T-Convertor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-T-Convertor/Pods-T-Convertor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-T-Convertor/Pods-T-Convertor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8D6307F25C02FF600DC7837 /* Sources */ = {
@@ -287,10 +357,13 @@
 		};
 		A8D6309825C02FF700DC7837 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30E1EF52FE7AEDF37FA2D49 /* Pods-T-Convertor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "T-Convertor/T-Convertor.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5SYDV9Z7U;
 				INFOPLIST_FILE = "T-Convertor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,10 +378,13 @@
 		};
 		A8D6309925C02FF700DC7837 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA189E913BF7A0AA972AEAB6 /* Pods-T-Convertor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "T-Convertor/T-Convertor.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5SYDV9Z7U;
 				INFOPLIST_FILE = "T-Convertor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
